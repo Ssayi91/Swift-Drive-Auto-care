@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | QuickDrive & Fix</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-brand"><i class="fas fa-tools"></i> QuickDrive Admin</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="car-hire.html">Car Hire</a></li>
+      <li><a href="garage-services.html">Garage</a></li>
+      <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Header -->
+  <header class="page-header">
+    <h1><i class="fas fa-user-cog"></i> Admin Dashboard</h1>
+    <p>Manage bookings, garage requests & M-Pesa transactions.</p>
+  </header>
+
+  <!-- Dashboard Panels -->
+  <section class="dashboard">
+    <!-- Car Hire Bookings -->
+    <div class="dashboard-panel">
+      <h2><i class="fas fa-car"></i> Car Hire Bookings</h2>
+      <div class="booking-list">
+        <div class="booking-card">
+          <p><strong>Name:</strong> John Mwangi</p>
+          <p><strong>Car:</strong> Toyota Axio</p>
+          <p><strong>Date:</strong> 2025-06-01</p>
+          <p><strong>Status:</strong> <span class="status pending">Pending</span></p>
+          <button class="approve">Approve</button>
+          <button class="reject">Reject</button>
+        </div>
+        <!-- Add more bookings dynamically -->
+      </div>
+    </div>
+
+    <!-- Garage Service Requests -->
+    <div class="dashboard-panel">
+      <h2><i class="fas fa-wrench"></i> Garage Bookings</h2>
+      <div class="booking-list">
+        <div class="booking-card">
+          <p><strong>Name:</strong> Aisha Hassan</p>
+          <p><strong>Service:</strong> Oil Change</p>
+          <p><strong>Date:</strong> 2025-06-03</p>
+          <p><strong>Status:</strong> <span class="status confirmed">Confirmed</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- M-Pesa Transactions -->
+    <div class="dashboard-panel">
+      <h2><i class="fas fa-money-check-alt"></i> M-Pesa Payments</h2>
+      <table class="payments-table">
+        <thead>
+          <tr>
+            <th>Client</th>
+            <th>Phone</th>
+            <th>Service</th>
+            <th>Amount</th>
+            <th>Reference</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Mwangi</td>
+            <td>0712345678</td>
+            <td>Car Hire</td>
+            <td>KSh 4,000</td>
+            <td>MPESA123XYZ</td>
+            <td><span class="status paid">Paid</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 QuickDrive & Fix | Admin Control Panel</p>
+  </footer>
+
+</body>
+</html>

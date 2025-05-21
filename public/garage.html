@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garage Services | QuickDrive & Fix</title>
+  <link rel="stylesheet" href="./css/style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-brand"><i class="fas fa-tools"></i> QuickDrive & Fix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="car-hire.html">Car Hire</a></li>
+      <li><a href="garage.html" class="active">Garage</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="https://wa.me/254736194051"><i class="fab fa-whatsapp"></i> Chat</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1><i class="fas fa-wrench"></i> Garage Services</h1>
+    <p>We keep your car running smoothly — book a service with us.</p>
+  </header>
+
+  <!-- Services List -->
+  <section class="services-list">
+    <div class="service-item">
+      <i class="fas fa-oil-can service-icon"></i>
+      <h3>Oil Change</h3>
+      <p>Engine oil replacement and filter check.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-car-battery service-icon"></i>
+      <h3>Battery Replacement</h3>
+      <p>Check-up and replacement of car batteries.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-car-crash service-icon"></i>
+      <h3>Body Repair</h3>
+      <p>Professional bodywork and paint touch-ups.</p>
+    </div>
+    <div class="service-item">
+      <i class="fas fa-tools service-icon"></i>
+      <h3>Full Service</h3>
+      <p>Comprehensive vehicle check and servicing.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking-form">
+    <h2>Book Garage Service</h2>
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required />
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a service --</option>
+        <option value="Oil Change">Oil Change</option>
+        <option value="Battery Replacement">Battery Replacement</option>
+        <option value="Body Repair">Body Repair</option>
+        <option value="Full Service">Full Service</option>
+      </select>
+
+      <label for="booking-date">Preferred Date</label>
+      <input type="date" id="booking-date" name="booking-date" required />
+
+      <button type="submit"><i class="fas fa-tools"></i> Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+ <footer>
+    <p>&copy; 2025 QuickDrive & Fix | All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Hire | QuickDrive & Fix</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-brand"><i class="fas fa-car-side"></i> QuickDrive & Fix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="car-hire.html" class="active">Car Hire</a></li>
+      <li><a href="garage.html">Garage</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="https://wa.me/254736194051"><i class="fab fa-whatsapp"></i> Chat</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1><i class="fas fa-car"></i> Available Cars for Hire</h1>
+    <p>Select your ride and schedule your booking below.</p>
+  </header>
+
+  <!-- Car Listings -->
+  <section class="car-listings">
+    <div class="car-card">
+      <img src="./assets/prado.png" alt="Toyota Prado" />
+      <h3>Toyota Prado TX</h3>
+      <p>Spacious, powerful, and ideal for long-distance travel.</p>
+      <span>KSh 9,000/day</span>
+    </div>
+    <div class="car-card">
+      <img src="./assets/mazda deio.webp" alt="Mazda Demio" />
+      <h3>Mazda Demio</h3>
+      <p>Fuel efficient and perfect for city trips.</p>
+      <span>KSh 2,500/day</span>
+    </div>
+    <div class="car-card">
+      <img src="./assets/Nissan-Xtrail.jpg" alt="Nissan X-Trail" />
+      <h3>Nissan X-Trail</h3>
+      <p>Reliable 4WD crossover for rugged terrain.</p>
+      <span>KSh 5,500/day</span>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking-form">
+    <h2>Book Your Car</h2>
+    <form>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required />
+
+      <label for="car">Select Car</label>
+      <select id="car" name="car" required>
+        <option value="">-- Choose a car --</option>
+        <option value="Toyota Prado">Toyota Prado TX</option>
+        <option value="Mazda Demio">Mazda Demio</option>
+        <option value="Nissan X-Trail">Nissan X-Trail</option>
+      </select>
+
+      <label for="pickup-date">Pickup Date</label>
+      <input type="date" id="pickup-date" name="pickup-date" required />
+
+      <label for="return-date">Return Date</label>
+      <input type="date" id="return-date" name="return-date" required />
+
+      <button type="submit"><i class="fas fa-calendar-check"></i> Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 QuickDrive & Fix | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
