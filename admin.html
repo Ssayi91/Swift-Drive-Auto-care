@@ -17,6 +17,8 @@
       <li><a href="car-hire.html">Car Hire</a></li>
       <li><a href="garage.html">Garage</a></li>
       <li><a href="admin.html" class="active">Dashboard</a></li>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+
     </ul>
   </nav>
 
@@ -85,6 +87,34 @@
     </table>
   </div>
   </div>
+  <!-- Car Upload Panel -->
+<!-- Manage Uploaded Cars -->
+<div class="dashboard-panel">
+  <h2><i class="fas fa-car-side"></i> Manage Uploaded Cars</h2>
+  <div class="car-list">
+    <div class="car-card">
+      <img src="./assets/toyota axio.jpg" alt="Toyota Axio">
+      <div class="car-info">
+        <h3>Toyota Axio</h3>
+        <p>KSh 3,500 per day</p>
+        <button class="edit"><i class="fas fa-edit"></i> Edit</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="./assets/note-e-power-i.jpg" alt="Nissan Note">
+      <div class="car-info">
+        <h3>Nissan Note</h3>
+        <p>KSh 3,000 per day</p>
+        <button class="edit"><i class="fas fa-edit"></i> Edit</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </div>
+    </div>
+    <!-- Add more car-cards dynamically -->
+  </div>
+</div>
+
   </section>
 
   <!-- Footer -->
@@ -93,4 +123,6 @@
   </footer>
 
 </body>
+<script src="./js/login.js"></script>
+<script src="./js/admin.js"></script>
 </html>

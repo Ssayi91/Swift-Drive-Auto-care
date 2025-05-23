@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login | QuickDrive</title>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <div class="login-container">
+    <h2><i class="fas fa-user-shield"></i> Admin Login</h2>
+    <form id="login-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter admin username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+
+      <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+    </form>
+    <p id="login-error" style="display:none;">Invalid credentials. Try again.</p>
+    <div class="back-to-home">
+  <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+</div>
+
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>

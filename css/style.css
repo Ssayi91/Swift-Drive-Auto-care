@@ -349,6 +349,17 @@ footer {
 }
 
 /* admin */
+.logout-btn{
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0b2949;
+  margin: -5px;
+  border-radius: 5px;
+  border: 1px solid #0b2949;
+  font-family: inherit;
+
+}
 .dashboard {
   padding: 30px 20px;
   display: flex;
@@ -463,3 +474,61 @@ footer {
     overflow-x: auto;
   }
 }
+/* manage cars*/
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.car-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  width: calc(33.333% - 10px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.car-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 10px;
+}
+
+.car-info h3 {
+  margin: 0 0 5px;
+  font-size: 1.1rem;
+}
+
+.car-info button {
+  padding: 6px 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.car-info .edit {
+  background-color: #ff9800;
+  color: white;
+}
+
+.car-info .delete {
+  background-color: #f44336;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .car-card {
+    width: 100%;
+  }
+}
+
+
