@@ -88,6 +88,22 @@
   </div>
   </div>
   <!-- Car Upload Panel -->
+    <!-- Upload New Car -->
+  <form class="car-upload-form">
+    <div class="form-group">
+      <label for="carName">Car Name</label>
+      <input type="text" id="carName" placeholder="e.g. Toyota Axio" required>
+    </div>
+    <div class="form-group">
+      <label for="carPrice">Price per Day (KSh)</label>
+      <input type="number" id="carPrice" placeholder="e.g. 4000" required>
+    </div>
+    <div class="form-group">
+      <label for="carPhotos">Car Photos (you can select multiple)</label>
+      <input type="file" id="carPhotos" multiple accept="image/*">
+    </div>
+    <button type="submit" class="upload-btn"><i class="fas fa-upload"></i> Upload Car</button>
+  </form>
 <!-- Manage Uploaded Cars -->
 <div class="dashboard-panel">
   <h2><i class="fas fa-car-side"></i> Manage Uploaded Cars</h2>
